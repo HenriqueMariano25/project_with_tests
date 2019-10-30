@@ -1,0 +1,33 @@
+<h1>Teste</h1>
+
+<%= form_tag("/personagens", method: "get", class:"form-inline navbar-right") do %>
+  <div class="form-group">
+    <%= text_field_tag :name, nil, class:"form-control mr-sm-2" %>
+    <%= submit_tag("Search", class: "btn btn-outline-primary my-2 my-sm-0")  %>
+  </div>
+<% end %>
+
+<fieldset>
+  Nome: <%= @personagem.nome %>
+</fieldset>
+<fieldset>
+  Vida: <%= @personagem.pontos_vida %>
+</fieldset>
+<fieldset>
+  Força: <%= @personagem.forca %>
+</fieldset>
+<fieldset>
+  Destreza: <%= @personagem.destreza %>
+</fieldset>
+<fieldset>
+  Constituição: <%= @personagem.constituicao %>
+</fieldset>
+<fieldset>
+  Inteligencia: <%= @personagem.inteligencia %>
+</fieldset>
+<fieldset>
+  Sabedoria: <%= @personagem.sabedoria %>
+</fieldset>
+<fieldset>
+  Carisma: <%= @personagem.carisma %>
+</fieldset>
